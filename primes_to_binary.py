@@ -27,6 +27,8 @@ if not plot_diffs:
     binaries = [np.binary_repr(x,width=24) for x in my_nums]
     x_axis = []
     y_axis = []
+
+    # localize the append methods to improve performance slightly
     x_appender = x_axis.append
     y_appender = y_axis.append
 
